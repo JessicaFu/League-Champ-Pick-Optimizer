@@ -1,0 +1,104 @@
+#profile-pic{
+	display: inline-block;
+}
+
+#profile-info{
+	display: inline-block;
+}
+
+.profile-info{
+	border: solid #979797;
+	border-width: 0 1px;
+	border-top: solid #979797 1px;
+	border-bottom: solid #979797 1px;
+	border-radius: 7px;
+	float: right;
+	margin-right: 18%;
+	margin-bottom: 50px;
+}
+
+#edit-but{
+	display: block;
+	float: right;
+	border-top-color: #B10014;
+ 	border-right-color: #B10014;
+ 	border-bottom-color: #B10014;
+ 	border-left-color: #B10014;
+ 	background-color: #B10014;
+ 	color: white;
+
+}
+
+#profile-info h1{
+	font-family: "source sans pro";
+	font-weight: 100px;
+	float: right;
+	font-size: 20pt;
+}
+
+#profile-info ul{
+	list-style-type: none;
+}
+
+.profile-info-line {
+	margin: 20px 0;
+}
+
+.profile-info-line p{
+	font-family: "source sans pro";
+	font-size: 13pt;
+}
+
+#profile-info .btn-default{
+	border-top-color: #B10014;
+ 	border-right-color: #B10014;
+ 	border-bottom-color: #B10014;
+ 	border-left-color: #B10014;
+}
+
+#item{
+	display: inline-block;
+	margin-right: 50px;
+	margin-left:50px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 2px 4px 5px #CBCBCB;
+	width: 235px;
+	margin-bottom: 50px;
+}
+
+.item-name{
+	font-family: roboto;
+	font-weight: lighter;
+	font-size: 15pt;
+	color: #4A4A4A;
+	margin: 0px;
+}
+
+.price{
+	color:#FF4446;
+	font-family: roboto;
+	font-weight: regular;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+#current-sales{
+	font-family: "source sans pro";
+	display: block;
+}
+
+#sold{
+	background-color: #B10014;
+	border-top-color: #B10014;
+ 	border-right-color: #B10014;
+ 	border-bottom-color: #B10014;
+ 	border-left-color: #B10014;
+ 	color: white;
+ 	float: right;
+ 	height: 35px;
+ 	padding-right:3px;
+ 	padding-left: 3px;
+}

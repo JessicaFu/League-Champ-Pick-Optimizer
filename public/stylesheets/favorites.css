@@ -1,0 +1,11 @@
+.fav{
+	background-color: #B10014;
+	padding: 3px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -50;
+	width: 30px;
+	height: auto;
+	border-radius: 3px;
+}

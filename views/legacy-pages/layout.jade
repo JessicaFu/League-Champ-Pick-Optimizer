@@ -1,0 +1,59 @@
+doctype html
+html(lang='en', ng-app='SoukApp')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Souk
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    script(type='text/javascript', src='http://code.jquery.com/ui/1.11.4/jquery-ui.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js')
+    script(type='text/javascript', src='js/app.js')
+    link(href='stylesheets/layout.css', rel='stylesheet')
+  body
+    #topNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        a.navbar-brand(href='#')#logo SOUK
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#')
+                img.topNavIcon(src='./../images/icons/profile.png')
+            li
+              a(href='#')
+                img.topNavIcon(src='./../images/icons/add-souk.png')
+            li
+              a(href='#')
+                img.topNavIcon(src='./../images/icons/heart.png')
+            li
+              a(href='#') LOGOUT
+    .masthead
+      .container-fluid
+        h2#logo SOUK
+          //a(href='index.html')
+            //img(src='images/logo.png')
+        nav.navbar.navbar-default
+          #navbar.nav-stacked
+            ul.nav.navbar-nav
+              li.active
+                a.navCategory(href='#apparel') APPAREL
+              li
+                a.navCategory(href='#household') HOUSEHOLD
+              li
+                a.navCategory(href='#contact') TECHNOLOGY
+              li
+                a.navCategory(href='#contact') TEXTBOOKS
+              li
+                a.navCategory(href='#contact') OTHER
+    block content
+    footer.footer
+      .container
+        p.text-muted Place sticky footer content here.

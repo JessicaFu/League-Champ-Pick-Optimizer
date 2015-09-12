@@ -1,0 +1,11 @@
+#itemsCont.container-fluid
+	#recAddedItems.row-fluid
+		.col-md-12(ng-if="items.length === 0")
+			#noRecAdded No items in this category just yet!
+		.itemCon.col-md-4(ng-repeat="item in items")
+			.item
+				a(href="#")
+					img.itemImg(src='images/temp.jpg')
+				.itemText
+					h3.item-name {{item.name}}
+					p {{item.price}}

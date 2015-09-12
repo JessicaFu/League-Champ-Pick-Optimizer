@@ -1,0 +1,24 @@
+#topNav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+      span.sr-only Toggle navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-left
+        li
+          a(href='#')
+            img.topNavIcon(src='/images/icons/search.png')
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/account')
+            img.topNavIcon(src='/images/icons/profile.png')
+        li
+          a(href='/shop/new')
+            img.topNavIcon(src='/images/icons/add-souk.png')
+        li
+          a(href='/account/favorites')
+            img.topNavIcon(src='/images/icons/heart.png')
+        li
+          a.soukText(href='/login/logout') LOGOUT

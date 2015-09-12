@@ -1,0 +1,10 @@
+.generic-container{
+  display: inline-block;
+	border: solid #979797;
+	border-width: 0 1px;
+	border-top: solid #979797 1px;
+	border-bottom: solid #979797 1px;
+	border-radius: 7px;
+	float: right;
+  margin: 10px 10px;
+}

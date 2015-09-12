@@ -1,0 +1,15 @@
+#recAddedPanel.container-fluid
+	.row-fluid
+		.col-md-12
+			div.panelTitle
+				h3 RECENTLY ADDED
+	#recAddedItems.row-fluid
+		.col-md-12(ng-if="recAdded.length === 0")
+			#noRecAdded No recently added items just yet!
+		.itemCon.col-md-4(ng-repeat="item in recAdded")
+			.item
+				a(href="#")
+					img.itemImg(src='images/temp.jpg')
+				.itemText
+					h3.item-name {{item.name}}
+					p {{item.price}}

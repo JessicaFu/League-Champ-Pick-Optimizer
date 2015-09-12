@@ -1,0 +1,24 @@
+{
+  "name": "Souk",
+  "version": "0.0.1",
+  "description": "Souk webapp",
+  "dependencies": {
+    "angular": "*",
+    "express": "*",
+    "express-session": "*",
+    "jade": "*",
+    "mysql": "*",
+    "nib": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "stylus": "*",
+    "consolidate": "*",
+    "mustache": "*",
+    "body-parser": "*",
+    "morgan": "*",
+    "cookie-parser": "*",
+    "async": "*",
+    "multer": "~1.0.3"
+  },
+  "engine": "node 0.6.x"
+}

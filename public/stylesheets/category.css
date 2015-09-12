@@ -1,0 +1,62 @@
+
+/* --------- Household ------------- */
+.dropdown{
+	float: right;
+	padding-right: 20px;
+
+}
+
+.subcats{
+	margin:0px;
+	margin-left: 5%;
+	width:100px;
+	display: inline-block;
+	float: left;
+	padding-bottom: 100%;
+}
+
+.subcat{
+	font-family: orator std;
+	color: #4A4A4A;
+	text-decoration: none;
+	font-size: 11pt;
+}
+
+#item img{
+
+}
+
+.subcat-img{
+	width: 220px;
+	height: auto;
+}
+
+#item{
+	display: inline-block;
+	margin-right: 20px;
+	margin-left:50px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 2px 4px 5px #CBCBCB;
+	width: 250px;
+	height: 280px;
+	margin-bottom: 50px;
+}
+
+.item-name{
+	font-family: roboto;
+	font-weight: lighter;
+	font-size: 15pt;
+	color: #4A4A4A;
+	margin: 0px;
+}
+
+.price{
+	color:#FF4446;
+	font-family: roboto;
+	font-weight: regular;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+

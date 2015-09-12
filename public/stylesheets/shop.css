@@ -1,0 +1,176 @@
+/* ---------------------item--------------------- */
+#recAddedItems{
+  margin-left: 15px;
+}
+
+#noRecAdded {
+  text-align: center;
+  color: grey;
+  font-size: 125%;
+  font-style: italic;
+  margin-top: 50px;
+}
+
+.itemCon{
+  padding: 40px;
+}
+
+.item{
+	display: inline-block;
+	background-color: white;
+	border-radius: 8px;
+  margin-top: 40px;
+	-webkit-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.55);
+  box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.55);
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .itemImg{
+    max-height: 500px;
+  }
+}
+
+.item-name{
+	font-family: roboto;
+	font-weight: lighter;
+	font-size: 15pt;
+	color: #4A4A4A;
+	margin: 0px;
+}
+
+.price{
+	color:#FF4446;
+	font-family: roboto;
+	font-weight: regular;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+.distance{
+	color:#4A4A4A;
+	font-family: roboto;
+	font-weight: lighter;
+	font-style: italic;
+	margin: 0px;
+	font-size: 10pt;
+}
+
+/*************************/
+/*main jumbotron*/
+#overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  opacity: 0.2;
+  top: 0px;
+  bottom: 0px;
+}
+
+#mainDiv {
+    background: url('../../images/brownGate.jpg') no-repeat;
+    background-size: cover;
+    height: 400px;
+    opacity: 0.8;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/*************************/
+/*jumbotron search*/
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    #mainSearch {
+        width: 600px;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 600px;
+    }
+}
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#mainSearch, #searchBar, #expandSearchBttn {
+  height: 40px;
+}
+
+#searchBttn {
+  background-color: rgba(255, 57, 62, 1) !important;
+  border-color: rgba(255, 57, 62, 1) !important;
+}
+
+#searchBttn:active, #searchBttn:focus, #searchBttn:hover {
+  background-color: rgba(232, 7, 2, 1) !important;
+  border-color: rgba(255, 57, 62, 1) !important;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+/*************************/
+/*recently added panel*/
+#recAddedPanel{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.panelTitle{
+  border-bottom: 2px solid rgba(232, 7, 2, 1);
+  display: inline-block;
+}
+
+/******MOVE TO ITEMS****/
+
+.itemImg {
+  width: 100%;
+  height: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

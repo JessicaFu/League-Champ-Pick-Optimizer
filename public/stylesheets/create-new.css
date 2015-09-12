@@ -1,0 +1,105 @@
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,600,400italic,600italic,700);
+
+img{
+	padding-right: 20px;
+}
+
+#all {
+	background-color: #F8F8F8;
+	height: 100%;
+}
+
+#item-details{
+	display: inline-block;
+	margin: auto;
+	background-color: white;
+}
+
+.dropdown{
+	display: inline-block;
+}
+
+#category-drop{
+	display: inline-block;
+
+}
+
+#condition-drop{
+	display: inline-block;
+
+}
+
+.title{
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+	font-family: "source sans pro";
+	font-size: 15pt;
+	font-weight: 100;
+}
+
+.form-inline{
+	display: inline-block;
+}
+
+.container{
+	margin:0px;
+	box-shadow: 2px 4px 5px #CBCBCB;
+
+}
+
+.item-pic{
+	display: inline-block;
+}
+
+#content{
+	margin-left: 15%;
+	margin-right: 15%;
+	border: solid 1px gray;
+	border-radius: 5px;
+	padding: 30px;
+	background-color: #ffffff;
+}
+
+.btn-default{
+	color: #979797 !important;
+	font-family: "source sans pro" !important;
+	font-size: 12pt !important;
+	font-weight: 100 !important;
+}
+
+.caret{
+	color: #C30000;
+}
+
+.input-group-addon{
+	color: #C30000 !important;
+	background-color: white !important;
+}
+
+@media (max-width: 1013px) {
+	#content{
+		border: none;
+	}
+	#item-details{
+		margin: 0px;
+	}
+	#img{
+		margin: auto !important;
+		float: right;
+	}
+}
+
+@media (max-width: 767px) {
+	.title{
+		text-align: left;
+		width: auto;
+	}
+	.form-control{
+		width: 100% !important;
+	}
+}
