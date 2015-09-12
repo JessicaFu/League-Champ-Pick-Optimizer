@@ -1,4 +1,4 @@
-var app = angular.module("SoukApp", []);
+var app = angular.module("LolApp", []);
 
 app.service("util", function(cache, apiGet, helper) {
 	this.cache = cache;

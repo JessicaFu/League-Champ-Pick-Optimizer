@@ -1,7 +1,6 @@
-extends /views/templates/shop.jade
+extends /views/templates/main.jade
 
 block content
-	div(ng-controller="homeCtrl")
-		include /views/partials/home/jumbotron.jade
-		include /views/partials/home/recently-added.jade
+	div(ng-controller="calculateCtrl")
+		include /views/partials/home/calculate.jade
 

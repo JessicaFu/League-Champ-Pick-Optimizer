@@ -4,10 +4,7 @@ function init(){
 
 	/* GET home page. */
 	router.get('/', function(req, res, next) {
-		res.render('index', {
-			title: 'Brown Shib Test',
-			user: req.isAuthenticated() ? req.user : null
-		});
+		res.render('index');
 	});
 
 	return router;
