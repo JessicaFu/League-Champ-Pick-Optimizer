@@ -36,8 +36,7 @@ function init(){
 		saveUninitialized: true
 	}));
 
-	app.use("/uploads", express.static('/'));
-	app.use(express.static('/public'));
+	app.use(express.static('public'));
 	/*
 	app.use(function(req, res, next) {
 	  var err = new Error('Not Found');
