@@ -3,9 +3,12 @@ app.controller('calculateCtrl', function($scope, util){
 	var helper = util.helper;
 	var apiGet = util.apiGet;
 
+	$scope.bans = [null, null, null, null, null, null];
     $scope.redTeam = [null, null, null, null, null];
     $scope.blueTeam = [null, null, null, null, null];
+    $scope.playerElo = null;
 
+    $scope.elos = ["bronze", "silver", "gold", "platinum", "gold", "master", "diamond", "challenger"];
     $scope.champions = [
     "Aatrox",
 	"Ahri",
@@ -135,6 +138,18 @@ app.controller('calculateCtrl', function($scope, util){
 	"Zyra"];
 
     $scope.calculate = function(){
-		
+    	var query = {};
+    	for(var ban in $scope.bans){
+    		query["ban"]=$scope.champions[ban];
+    	}
+    	for(var champ in $scope.redTeam){
+    		query["redTeam"]=$scope.champions[champ];
+    	}
+    	for(var champ in $scope.blueTeam){
+    		query["blueTeam"]=$scope.champions[champ];
+    	}
+    	query["elo"] = $scope.playerElo;
+
+    	util.apiGet("http://localhost:4000", query); 
     };
 });

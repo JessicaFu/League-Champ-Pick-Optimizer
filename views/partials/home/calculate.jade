@@ -1,6 +1,15 @@
 #calContainer.container-fluid
 	.teamTitle.row
 		.col-md-offset-1.col-md-11
+			p Bans
+	.row
+		.col-md-1
+		.bans.col-md-1(ng-repeat="pick in [0, 1, 2, 3, 4, 5]")
+			p champ {{pick + 1}}
+			select(ng-model="bans[pick]", ng-options="champion for champion in champions")
+				option(value="") Select Champion
+	.teamTitle.row
+		.col-md-offset-1.col-md-11
 			p Red Team
 	.row
 		.col-md-1
@@ -17,6 +26,11 @@
 			p champ {{pick + 1}}
 			select(ng-model="blueTeam[pick]", ng-options="champion for champion in champions")
 				option(value="") Select Champion
+	.teamTitle.row
+		.col-md-offset-1.col-md-11
+			p Your Elo
+			select(ng-model="playerElo", ng-options="elo for elo in elos")
+				option(value="") Select Elo
 	.teamTitle.row
 		.col-md-offset-1.col-md-11
 			button(type="button" ng-click="calculate()") Pick Champion
